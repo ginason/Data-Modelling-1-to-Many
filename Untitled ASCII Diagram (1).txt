@@ -1,0 +1,22 @@
+   XXXXXXXXXXXXXXXXXXXXX
+XXXX                   X     Book
+X    Author        +--+X+-------------------------+
+X  +---+------+    | Author_ID|Book_ID|title|isbn |
+X  +ID | name |    |          |       |     |     |
+XXXX   |      |    |          |       |     |     |
+   +   |      |    +----------+--+X+--+-----+-----+
+   +---+------+                   X
+                  Hold            XXXXXXXXXXXXX            Loan
+         +----------------------------+   +--+X+-----------------------------+
+         |Book_ID|Hold ID|date placed |   | Book_ID|PatronID|due_date|renewed|
+         |       |       |            |   |        |        |        |       |
+         |       |       |            |   |        |        |        |       |
+         +-------+--+X+--+------------+   +--------+--+X+---+--------+-------+
+                     X                                 X
+                     XXXXXXXXXXXXXXXXXXXXXXX       XXXXX    Patron
+                              +-----------+X+----+XX+------------------------+
+                              |PatronID|Hold_ID|LoanID|name|card_number|email|
+                              |        |       |      |    |           |     |
+                              |        |       |      |    |           |     |
+                              |        |       |      |    |           |     |
+                              +--------+-------+------+----+-----------+-----+
